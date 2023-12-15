@@ -1,0 +1,112 @@
+﻿{
+  "name": "IISFotokiosk2СделатьФото",
+  "modelName": "i-i-s-fotokiosk2-сделать-фото",
+  "className": "СделатьФото",
+  "nameSpace": "IIS.Fotokiosk2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "колВоФото",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "инфоФото",
+      "relatedTo": "i-i-s-fotokiosk2-инфо-фото",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СделатьФотоE",
+      "modelName": "i-i-s-fotokiosk2-сделать-фото",
+      "attrs": [
+        {
+          "name": "колВоФото",
+          "caption": "Кол во фото",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Категория",
+          "lookupValueField": "категория",
+          "relationName": "ИнфоФото",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "категория",
+              "caption": "Категория",
+              "hidden": true,
+              "index": 2
+            },
+            {
+              "name": "цена",
+              "caption": "",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Инфо фото",
+          "name": "инфоФото",
+          "relatedTo": "i-i-s-fotokiosk2-инфо-фото",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СделатьФотоL",
+      "modelName": "i-i-s-fotokiosk2-сделать-фото",
+      "attrs": [
+        {
+          "name": "колВоФото",
+          "caption": "Кол во фото",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ИнфоФото",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "категория",
+              "caption": "Категория",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Категория",
+          "name": "инфоФото",
+          "relatedTo": "i-i-s-fotokiosk2-инфо-фото",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

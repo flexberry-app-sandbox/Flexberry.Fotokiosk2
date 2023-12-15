@@ -1,0 +1,229 @@
+﻿{
+  "name": "IISFotokiosk2Клиент",
+  "modelName": "i-i-s-fotokiosk2-клиент",
+  "className": "Клиент",
+  "nameSpace": "IIS.Fotokiosk2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "оплата",
+      "relatedTo": "i-i-s-fotokiosk2-оплата",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "отправНаПочту",
+      "relatedTo": "i-i-s-fotokiosk2-отправ-на-почту",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КлиентE",
+      "modelName": "i-i-s-fotokiosk2-клиент",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ОтправНаПочту",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "отправНаПочту",
+          "relatedTo": "i-i-s-fotokiosk2-отправ-на-почту",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Оплата",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Оплата.СделатьФото",
+              "belongsTo": [
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "Оплата.СделатьФото.ИнфоФото",
+                  "belongsTo": [],
+                  "hidden": false,
+                  "attrs": [
+                    {
+                      "name": "цена",
+                      "caption": "Стоимость",
+                      "hidden": false,
+                      "index": 2
+                    }
+                  ],
+                  "index": -1,
+                  "type": null,
+                  "caption": "",
+                  "name": "инфоФото",
+                  "relatedTo": "i-i-s-fotokiosk2-инфо-фото",
+                  "inverse": null
+                }
+              ],
+              "hidden": false,
+              "attrs": [],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "сделатьФото",
+              "relatedTo": "i-i-s-fotokiosk2-сделать-фото",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "способОпл",
+              "caption": "Способ оплаты",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "время",
+              "caption": "Время",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Способ оплаты",
+          "name": "оплата",
+          "relatedTo": "i-i-s-fotokiosk2-оплата",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КлиентL",
+      "modelName": "i-i-s-fotokiosk2-клиент",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ОтправНаПочту",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "отправНаПочту",
+          "relatedTo": "i-i-s-fotokiosk2-отправ-на-почту",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Оплата",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Оплата.СделатьФото",
+              "belongsTo": [
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "Оплата.СделатьФото.ИнфоФото",
+                  "belongsTo": [],
+                  "hidden": false,
+                  "attrs": [
+                    {
+                      "name": "цена",
+                      "caption": "Стоимость",
+                      "hidden": false,
+                      "index": 2
+                    }
+                  ],
+                  "index": -1,
+                  "type": null,
+                  "caption": "",
+                  "name": "инфоФото",
+                  "relatedTo": "i-i-s-fotokiosk2-инфо-фото",
+                  "inverse": null
+                }
+              ],
+              "hidden": false,
+              "attrs": [],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "сделатьФото",
+              "relatedTo": "i-i-s-fotokiosk2-сделать-фото",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "способОпл",
+              "caption": "Способ оплаты",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "время",
+              "caption": "Время",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Способ оплаты",
+          "name": "оплата",
+          "relatedTo": "i-i-s-fotokiosk2-оплата",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

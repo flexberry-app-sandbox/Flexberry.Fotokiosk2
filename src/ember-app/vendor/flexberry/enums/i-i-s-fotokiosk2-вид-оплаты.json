@@ -1,0 +1,9 @@
+﻿{
+  "nameSpace": "IIS.Fotokiosk2",
+  "className": "ВидОплаты",
+  "enumObjects": {
+    "Наличные": "Наличные",
+    "Карта": "Карта",
+    "QrКод": "Qr код"
+  }
+}

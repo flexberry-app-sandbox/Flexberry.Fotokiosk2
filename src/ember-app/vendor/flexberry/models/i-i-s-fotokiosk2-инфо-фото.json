@@ -1,0 +1,89 @@
+﻿{
+  "name": "IISFotokiosk2ИнфоФото",
+  "modelName": "i-i-s-fotokiosk2-инфо-фото",
+  "className": "ИнфоФото",
+  "nameSpace": "IIS.Fotokiosk2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "категория",
+      "type": "i-i-s-fotokiosk2-категория",
+      "flexberryType": "Категория",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "допНастройки",
+      "relatedTo": "i-i-s-fotokiosk2-доп-настройки",
+      "inverse": "инфоФото"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ИнфоФотоE",
+      "modelName": "i-i-s-fotokiosk2-инфо-фото",
+      "attrs": [
+        {
+          "name": "категория",
+          "caption": "Категория",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ДопНастройкиE",
+          "caption": "Доп настройки",
+          "name": "допНастройки",
+          "relatedTo": "i-i-s-fotokiosk2-доп-настройки",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ИнфоФотоL",
+      "modelName": "i-i-s-fotokiosk2-инфо-фото",
+      "attrs": [
+        {
+          "name": "категория",
+          "caption": "Категория",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

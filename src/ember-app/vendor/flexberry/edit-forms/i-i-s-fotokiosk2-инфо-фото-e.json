@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Информация о фото",
+  "name": "IISFotokiosk2ИнфоФотоE",
+  "className": "ИнфоФотоE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk2-инфо-фото",
+      "modelProjection": "ИнфоФотоE"
+    }
+  ]
+}

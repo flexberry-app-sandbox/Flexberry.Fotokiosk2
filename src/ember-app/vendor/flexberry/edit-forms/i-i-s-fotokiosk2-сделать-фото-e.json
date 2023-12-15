@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ИнфоФото",
+      "projection": "ИнфоФотоL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Сделать фото",
+  "name": "IISFotokiosk2СделатьФотоE",
+  "className": "СделатьФотоE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk2-сделать-фото",
+      "modelProjection": "СделатьФотоE"
+    }
+  ]
+}

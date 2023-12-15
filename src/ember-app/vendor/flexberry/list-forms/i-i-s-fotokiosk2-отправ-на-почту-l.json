@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-fotokiosk2-отправ-на-почту-e",
+  "editForm": "i-i-s-fotokiosk2-отправ-на-почту-e",
+  "external": false,
+  "caption": "Отправить на почту",
+  "name": "IISFotokiosk2ОтправНаПочтуL",
+  "className": "ОтправНаПочтуL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk2-отправ-на-почту",
+      "modelProjection": "ОтправНаПочтуL"
+    }
+  ]
+}

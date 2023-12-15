@@ -1,0 +1,57 @@
+﻿{
+  "applicationCaption": "Fotokiosk2",
+  "applicationTitle": "Фотокиоск",
+  "items": [
+    {
+      "link": null,
+      "menuName": "fotokiosk2",
+      "caption": "Fotokiosk2",
+      "title": "Fotokiosk2",
+      "children": [
+        {
+          "link": "i-i-s-fotokiosk2-отправ-на-почту-l",
+          "menuName": null,
+          "caption": "Отправ на почту",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-fotokiosk2-клиент-l",
+          "menuName": null,
+          "caption": "Клиент",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-fotokiosk2-оплата-l",
+          "menuName": null,
+          "caption": "Оплата",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-fotokiosk2-сделать-фото-l",
+          "menuName": null,
+          "caption": "Сделать фото",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-fotokiosk2-печать-фото-l",
+          "menuName": null,
+          "caption": "Печать фото",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-fotokiosk2-инфо-фото-l",
+          "menuName": null,
+          "caption": "Инфо фото",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

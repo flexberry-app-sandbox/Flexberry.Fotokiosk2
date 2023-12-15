@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Отправить на почту",
+  "name": "IISFotokiosk2ОтправНаПочтуE",
+  "className": "ОтправНаПочтуE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk2-отправ-на-почту",
+      "modelProjection": "ОтправНаПочтуE"
+    }
+  ]
+}

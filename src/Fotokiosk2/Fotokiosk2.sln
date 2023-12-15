@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fotokiosk2.Objects", "Objects/Fotokiosk2.Objects.csproj", "81feff15-97a4-4439-930e-5d33aa021108"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fotokiosk2.Tests", "Tests/Fotokiosk2.Tests.csproj", "f03d48fa-e7f1-466c-83ec-eff4f60c2f50"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fotokiosk2.ODataBackend", "ODataBackend/Fotokiosk2.ODataBackend.csproj", "273aa381-ac7e-4e96-9a49-dab03736481f"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fotokiosk2.IntegrationTests", "IntegrationTests/Fotokiosk2.IntegrationTests.csproj", "380956ed-8f57-4b11-8c89-456bb12a9c89"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+Debug|Any CPU = Debug|Any CPU
+Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		81feff15-97a4-4439-930e-5d33aa021108.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		81feff15-97a4-4439-930e-5d33aa021108.Debug|Any CPU.Build.0 = Debug|Any CPU
+		81feff15-97a4-4439-930e-5d33aa021108.Release|Any CPU.ActiveCfg = Release|Any CPU
+		81feff15-97a4-4439-930e-5d33aa021108.Release|Any CPU.Build.0 = Release|Any CPU
+		f03d48fa-e7f1-466c-83ec-eff4f60c2f50.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		f03d48fa-e7f1-466c-83ec-eff4f60c2f50.Debug|Any CPU.Build.0 = Debug|Any CPU
+		f03d48fa-e7f1-466c-83ec-eff4f60c2f50.Release|Any CPU.ActiveCfg = Release|Any CPU
+		f03d48fa-e7f1-466c-83ec-eff4f60c2f50.Release|Any CPU.Build.0 = Release|Any CPU
+		273aa381-ac7e-4e96-9a49-dab03736481f.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		273aa381-ac7e-4e96-9a49-dab03736481f.Debug|Any CPU.Build.0 = Debug|Any CPU
+		273aa381-ac7e-4e96-9a49-dab03736481f.Release|Any CPU.ActiveCfg = Release|Any CPU
+		273aa381-ac7e-4e96-9a49-dab03736481f.Release|Any CPU.Build.0 = Release|Any CPU
+		380956ed-8f57-4b11-8c89-456bb12a9c89.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		380956ed-8f57-4b11-8c89-456bb12a9c89.Debug|Any CPU.Build.0 = Debug|Any CPU
+		380956ed-8f57-4b11-8c89-456bb12a9c89.Release|Any CPU.ActiveCfg = Release|Any CPU
+		380956ed-8f57-4b11-8c89-456bb12a9c89.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

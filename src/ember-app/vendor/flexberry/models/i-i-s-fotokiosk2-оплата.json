@@ -1,0 +1,204 @@
+﻿{
+  "name": "IISFotokiosk2Оплата",
+  "modelName": "i-i-s-fotokiosk2-оплата",
+  "className": "Оплата",
+  "nameSpace": "IIS.Fotokiosk2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "время",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "способОпл",
+      "type": "i-i-s-fotokiosk2-вид-оплаты",
+      "flexberryType": "ВидОплаты",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сделатьФото",
+      "relatedTo": "i-i-s-fotokiosk2-сделать-фото",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОплатаE",
+      "modelName": "i-i-s-fotokiosk2-оплата",
+      "attrs": [
+        {
+          "name": "способОпл",
+          "caption": "Способ оплаты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "время",
+          "caption": "Время",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СделатьФото",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СделатьФото.ИнфоФото",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "категория",
+                  "caption": "Категория фото",
+                  "hidden": false,
+                  "index": 3
+                },
+                {
+                  "name": "цена",
+                  "caption": "Стоимость",
+                  "hidden": false,
+                  "index": 5
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "инфоФото",
+              "relatedTo": "i-i-s-fotokiosk2-инфо-фото",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "колВоФото",
+              "caption": "Количество фото",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Категория фото",
+          "name": "сделатьФото",
+          "relatedTo": "i-i-s-fotokiosk2-сделать-фото",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ОплатаL",
+      "modelName": "i-i-s-fotokiosk2-оплата",
+      "attrs": [
+        {
+          "name": "способОпл",
+          "caption": "Способ оплаты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "время",
+          "caption": "Время",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СделатьФото",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СделатьФото.ИнфоФото",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "категория",
+                  "caption": "Категория фото",
+                  "hidden": false,
+                  "index": 3
+                },
+                {
+                  "name": "цена",
+                  "caption": "Стоимость",
+                  "hidden": false,
+                  "index": 5
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "инфоФото",
+              "relatedTo": "i-i-s-fotokiosk2-инфо-фото",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "колВоФото",
+              "caption": "Количество фото",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Категория фото",
+          "name": "сделатьФото",
+          "relatedTo": "i-i-s-fotokiosk2-сделать-фото",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
